@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* [class ^= "box-"] {
+    display: grid;
+    place-items: center;
+    border: solid 5px orangered;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    color: #fff;
+} */
+
+body {
+    background: rgba(238, 94, 94, 0.1);
+    height: 100vh;
+}
+
+.header-design {
+    background: rgba(238, 94, 94, 0.1);
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/****************** Nav Section ******************/
+
+.nav-design {
+    width: 100%;
+    height: 60px;
+    background: rgba(164, 238, 94, 0.1);
+    box-shadow: 5px 5px rgba(72, 74, 75,.2);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-design {
+    width: 200px;
+    height: 100%;
+    /* background-color: rgb(185, 52, 52); */
+    text-align: center;
+}
+
+.logo-design .logo-anchor {
+    padding: auto 20px;
+    line-height: 60px;
+    font-size: 30px;
+    color: black;
+
+}
+
+.logo-design .logo-anchor:hover {
+    color: blue;
+}
+
+.nav-design ul {
+    width: fit-content;
+    height: 100%;
+    /* background: rgb(49, 218, 105); */
+    list-style: none;
+    
+}
+
+.nav-design ul li {
+    display: inline;
+
+}
+
+.nav-design ul li a {
+    padding: 0 20px;    
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    line-height: 60px;
+    
+}
+
+.nav-design ul li a:hover {
+    color: blue;
+    
+}
+
+/* ****************** Hero Section ******************/ 
+
+/* Container to hold the two sections */
+/* Container to hold the two sections */
+.hero-container {
+    background-color: aqua;
+    display: flex;
+}
+
+/* Left section */
+.hero-section {
+    background-color: beige;
+    flex: 1; /* This will make the left section take up equal space with the right section */
+    padding: 20px; /* Optional: Add some padding for better aesthetics */
+    display: flex;
+    flex-direction: column; /* Set the flex-direction to column to stack elements vertically */
+}
+
+/* Style for the about-me-content container */
+.about-me-content {
+    flex: 1; /* Allow the content to take up all the available space in the left section */
+    display: flex;
+    flex-direction: column; /* Stack the h1 and p elements vertically */
+    justify-content: center; /* Vertically center the content */
+}
+
+/* Style for the h1 within the left section */
+.about-me-section h1 {
+    font-size: 35px;
+    margin-bottom: 20px; /* Add some space between the h1 and p */
+}
+
+/* Style for the p within the left section */
+.about-me-section p {
+    /* Add any desired styles for the paragraph here */
+}
+
+/* Right section */
+.hero-section-img {
+    background-color: aquamarine;
+    /* flex: 1; */ /* Remove this flex property to allow equal width for both sections */
+    display: flex;
+    align-items: center; /* Optional: Vertically center the image within the right section */
+    justify-content: center; /* Optional: Horizontally center the image within the right section */
+}
+
+/* Style for the image within the right section */
+.hero-section-img img {
+    max-width: 100%; /* Optional: Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Optional: Ensure the image doesn't exceed the container height */
+}
