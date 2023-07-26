@@ -27,7 +27,7 @@ body {
 
 .header-design {
     background: rgba(238, 94, 94, 0.1);
-    height: 90vh;
+    height: 100vh;
     width: 90%;
     margin: 20px auto;
 }
@@ -95,48 +95,72 @@ body {
 /* Container to hold the two sections */
 .hero-container {
     background-color: aqua;
-    display: flex;
+    height: 90vh;
+    width: 100%;
+
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
 }
 
 /* Left section */
 .hero-section {
     background-color: beige;
-    flex: 1; /* This will make the left section take up equal space with the right section */
-    padding: 20px; /* Optional: Add some padding for better aesthetics */
     display: flex;
-    flex-direction: column; /* Set the flex-direction to column to stack elements vertically */
+    
 }
 
 /* Style for the about-me-content container */
 .about-me-content {
-    flex: 1; /* Allow the content to take up all the available space in the left section */
     display: flex;
-    flex-direction: column; /* Stack the h1 and p elements vertically */
-    justify-content: center; /* Vertically center the content */
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+
+
+    
 }
 
 /* Style for the h1 within the left section */
-.about-me-section h1 {
+.about-me-content h1 {
     font-size: 35px;
-    margin-bottom: 20px; /* Add some space between the h1 and p */
+    padding-bottom: 10%; /* Add some space between the h1 and p */
 }
 
 /* Style for the p within the left section */
-.about-me-section p {
-    /* Add any desired styles for the paragraph here */
+.about-me-content p {
+    padding-bottom: 10%;/* Add any desired styles for the paragraph here */
+}
+
+.hero-button {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-button button {
+
 }
 
 /* Right section */
 .hero-section-img {
     background-color: aquamarine;
+    width: 100%;
+    text-align: center;
     /* flex: 1; */ /* Remove this flex property to allow equal width for both sections */
-    display: flex;
-    align-items: center; /* Optional: Vertically center the image within the right section */
-    justify-content: center; /* Optional: Horizontally center the image within the right section */
+    /* display: flex; */
+    /* align-items: center; Optional: Vertically center the image within the right section */
+    /* justify-content: center; Optional: Horizontally center the image within the right section */
 }
 
 /* Style for the image within the right section */
 .hero-section-img img {
-    max-width: 100%; /* Optional: Ensure the image doesn't exceed the container width */
+    max-width: 100%; 
+    /* Optional: Ensure the image doesn't exceed the container width */
     max-height: 100%; /* Optional: Ensure the image doesn't exceed the container height */
 }
+
+
