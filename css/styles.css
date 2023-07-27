@@ -26,7 +26,7 @@ body {
 }
 
 .header-design {
-    background: rgba(238, 94, 94, 0.1);
+    /* background: rgba(238, 94, 94, 0.1); */
     height: 100vh;
     width: 90%;
     margin: 20px auto;
@@ -126,10 +126,9 @@ body {
 
 /* Left section */
 .hero-section {
-    background-color: beige;
-    display: flex;
-    height:auto;
-    
+    /* background-color: beige; */
+    width: 50%;
+    display: flex;       
 }
 
 /* Style for the about-me-content container */
@@ -144,40 +143,59 @@ body {
 /* Style for the h1 within the left section */
 .about-me-content h1 {
     font-size: 35px;
-    padding-bottom: 10%; /* Add some space between the h1 and p */
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
 }
 
 /* Style for the p within the left section */
 .about-me-content p {
-    padding-bottom: 10%;/* Add any desired styles for the paragraph here */
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    font-size: larger;
 }
 
 .hero-button {
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
 }
 
 .hero-button button {
+    Padding:1rem;
+    margin: 2rem;
 
 }
 
 /* Right section */
 .hero-section-img {
-    background-color: aquamarine;
-    width: 100%;      
-    /* align-items: center;     */
-    /* Optional: Vertically center the image within the right section */ 
-    /* justify-content: center;     */
-     /* Optional: Horizontally center the image within the right section */
+    /* background-color: aquamarine; */
+    width: 50%;
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+         
 }
 
 /* Style for the image within the right section */
 .hero-section-img img {
-    display: block; /* Ensure the image is treated as a block element */
-    margin: 0 auto; /* Set margins to auto to horizontally center the image */
-    max-width: 100%; /* Optional: Ensure the image doesn't exceed the container width */
-    /* max-height: 100%; Optional: Ensure the image doesn't exceed the container height */
+
+    border: 5px solid #555;
+    /* display: block; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    width: 50%; 
+    height: 50%;
+   
   }
   
 
+/* ------------About me Section--------- */
+
+.about-me-container {
+    background-color: aqua;
+    width: 100%;
+    height: 90vh;
+}
