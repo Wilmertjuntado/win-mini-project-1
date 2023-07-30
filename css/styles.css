@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    
 }
 
 a {
@@ -20,8 +20,9 @@ body {
 /********** Header Section *************/
 
 .header-design {
-    height: 100vh;
+    
     width: 90%;
+    height: 10vh;
     margin: 20px auto;
 }
 
@@ -84,14 +85,19 @@ body {
     
 }
 
+
 /* ****************** Hero Section ******************/ 
 
 
 .hero-container {
     height: 90vh;
     width: 100%;
+    margin: 20px auto auto 20px;
 
     display: flex;
+    flex-direction: row;
+    justify-items: center;
+    text-align: center;
 }
 
 /* Left section */
@@ -160,6 +166,10 @@ body {
     height: 80%;
 
 }
+
+
+
+
   
 
 /* ------------About me Section--------- */
@@ -210,7 +220,7 @@ body {
 
 .garage-container {
     width: 100%;
-    height: 150vh;
+    height: 140vh;
    
     
 }
@@ -347,89 +357,21 @@ body {
 }
 
 
-/***************** My Work Flow **********************/
-
-.work-flow-container {
-    width: 100%;
-    height: 100vh;
-    margin-top: 5em;
-    margin-bottom: 10em;
-    text-align: center;
-
-    
-}
-
-.work-flow-container .flow-h2 {   
-    font-size: 35px;
-    padding-top: 20px;
-    padding-bottom: 50px;
-   
-}
-
-
-
-.work-flow {
-    width: 80%;
-    height: auto;
-    background-color: aliceblue;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
- 
-   
-    display: flex;    
-    flex-wrap: wrap;  
-    align-items: center;  
-    justify-content: space-evenly;
-    box-shadow: 0px 15px 10px -15px #838080;
-}
-
-
-
-[class ^= "num"] {
-    width: 40%;
-    height: auto;
-     
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-        
-}
-
-
-
-.flow-design {
-    font-size: large;
-    padding: 2rem 0;
-}
-
-.flow-image {
-    width: 100%;
-    height: 300px;
-}
-
-.p-flow {
-    text-align: left;
-    padding-top: 2rem;
-    margin-bottom: 2rem;
-}
 
 
 /************************** My Garage **********************/
 
 .my-work-container {
     width: 100%;
-    height: 75vh;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    height: 50vh;
+    margin-top: 10em;
+    margin-bottom: 10em;
     text-align: center;
 }
 
 .my-work-container .my-work {
     font-size: 35px;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 50px;
     
 }
@@ -480,7 +422,7 @@ body {
 /****************** Contact Form *******************/
 
 .contact-container {
-    height: 50vh;
+    height: 75vh;
     width: 100%;
     background-color: aliceblue;
     margin-top: 1rem;  
@@ -490,6 +432,8 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    
     
 }
 
@@ -511,13 +455,446 @@ body {
     width: 100%;
     height: 10em;
     color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    
-    margin: 10em 0 0 0;
+    justify-content: center;
+    margin: auto auto;
 }
 
 .footer-div h3 {
     font-size: small;
        justify-self: center;
+       align-self: center;
 
 }
+
+/************************ Media Queries ***********************/
+
+@media screen and (max-width: 600px) {
+
+    .nav-design {
+        width: 100%;
+        height: 100px;
+        background: rgba(164, 238, 94, 0.1);
+        box-shadow: 0px 15px 10px -15px #838080; 
+    
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .nav-design .logo-design {
+        width: 150px;
+        height: 100%;
+    }
+    
+    .logo-design .logo-anchor {
+        padding: auto auto;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .logo-design .logo-anchor:hover {
+        color: blue;
+    }
+    
+    .logo-design .p-anchor {
+        font-size: small;
+        font-weight: bold;
+    
+    }
+    
+    .nav-design .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        list-style: none; 
+        text-decoration: none;   
+        /* display: none; */
+    }
+    
+    .nav-design ul li a {
+        padding: 0 20px;    
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        line-height: 60px;
+        text-decoration: none; 
+        font-weight: bold;
+        
+    }
+    
+    .nav-design ul li a:hover {
+        color: blue;
+        
+    }
+    
+
+    /* ****************** Hero Section ******************/ 
+    .hero-container {
+        height: 100vh;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+            /* Left section */
+        .hero-section {
+            width: 100%;
+            display: flex;
+
+        }
+
+        /* Style for the about-me-content container */
+        .about-me-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            margin:auto;
+        }
+
+        /* Style for the h1 within the left section */
+        .about-me-content h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        /* Style for the p within the left section */
+        .about-me-content p {
+            margin-bottom: 1.5rem;
+            padding-left: .5rem;
+            padding-right: 1rem;
+            font-size: medium;
+        }
+
+        .hero-button {
+            text-align: center;
+            display: flex;
+            justify-content:center;
+        }
+
+        .hero-button button {
+            width: 6rem;
+            height: 2rem;
+            Padding: 2.5px;
+            margin: 1rem;
+            font-size: 15px;
+            border-radius: .5rem;
+            font-weight:normal;
+        }
+
+        /* Right section */
+        .hero-section-img {
+            width: 100%;
+            
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+                
+        }
+
+        /* Style for the image within the right section */
+        .hero-section-img img {
+
+            border: 5px solid #969393;
+           
+            width: 100%; 
+            height: 100%;
+            margin-top: 2rem;
+           
+
+        }
+
+        /* ------------About me Section--------- */
+
+
+        .about-me-container {
+            background-color: rgba(238, 94, 94, 0.1);
+            box-shadow: 0px -15px 10px -15px rgb(173, 152, 152); 
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+        }
+
+        .intro-about-me {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            
+            
+        }
+
+        .intro-about-me h2 {
+            font-size: 20px;
+            margin-bottom: 1.5rem;
+            
+        }
+
+        .intro-about-me p {
+            margin-bottom: 2.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: medium;
+        }
+
+        .intro-about-me img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+
+        /************** Tool-Box Section ************/
+
+        .garage-container {
+            width: 100%;
+            height: 200vh;
+     }
+
+
+        .container-section {
+            /* background: rgba(238, 192, 192, 0.1); */
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 100%;
+        
+
+        box-shadow: 0px 15px 10px -15px #9e9999;    /* bottom-shadow */
+        
+        }
+
+        .container-section .big-label {
+            font-size: 35px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .about-me-info {
+            width:100%;
+            height: 100%;
+
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(10, 150px);
+        
+        }
+
+        [class ^= "item"] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+            background-color: aliceblue;
+        }
+
+        .about-me-info > div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+
+        .about-me-info .item0 { 
+            
+            grid-column: 1 / 7;
+            grid-row: 1 / 2;
+        }
+
+        .about-me-info .item1 { 
+            
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .about-me-info .item2 {
+            
+            grid-column: 4 / 7;
+            grid-row: 2 / 3;
+        }
+
+        .about-me-info .item3 {
+            
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+        }
+
+        .about-me-info .item4 {
+        
+            grid-column: 4 / 7;
+            grid-row: 3 / 4;
+        }
+
+
+        .about-me-info .item5 {
+        
+            grid-column: 1 / 7;
+            grid-row: 4 / 5;
+        }
+
+        .about-me-info .item6 { 
+
+            grid-column: 1 / 7;
+            grid-row: 5 / 6;
+        }
+
+        .about-me-info .item7 { 
+
+            grid-column: 1 / 4;
+            grid-row: 6 / 7;
+        }
+
+        .about-me-info .item8 { 
+
+            grid-column: 4 / 7;
+            grid-row: 6 / 7;
+        }
+
+        .about-me-info .item9 { 
+
+            grid-column: 1 / 4;
+            grid-row: 7 / 8;
+        }
+
+        .about-me-info .itemA { 
+
+            grid-column: 4 / 7;
+            grid-row: 7 / 8;
+        }
+
+        .title-item {
+            text-decoration-line: underline;
+            font-size: 25px;
+        }
+
+        .a-design {
+            font-size: 20px;
+        }
+
+        .about-me-info img {
+            width: 80px;
+            height: 80px;
+        }
+
+            /************************** My Garage **********************/
+
+        .my-work-container {
+            width: 100%;
+            height: 60vh;
+            margin-top: 2.5rem;
+            margin-bottom: 30em;
+            text-align: center;
+        }
+
+        .my-work-container .my-work {
+            font-size: 30px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+        }
+
+        .work-section {
+            width: 100%;
+            height: auto;
+            background-color: aliceblue;
+            
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        
+            display: flex;    
+            flex-direction: row; 
+            text-align: center;  
+            justify-content: center;
+            box-shadow: 0px 15px 10px -15px #838080;
+        }
+
+        .work-garage {
+            /* background-color: aqua; */
+            width: 80%;
+            height: 300px;
+
+            display: flex;  
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .work-garage img {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 2rem;
+        }
+
+        .work-garage .work-h3 {
+            font-size: large;
+        }
+
+
+             /****************** Contact Form *******************/
+
+        .contact-container {
+            height: 85vh;
+            width: 100%;
+            background-color: aliceblue;
+            margin-top: 30em;  
+            margin-bottom: 5em;
+            padding-top: 2rem;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .social-media > img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+
+        .container h3 {
+            font-size: large;
+        }
+
+        /*************** Footer Section ***************/
+
+        .footer-div {
+            background-color: rgb(39, 38, 38);
+            width: 100%;
+            height: 10em;
+            color: aliceblue;
+            text-align: center;
+            justify-content: center;
+            margin: auto auto;
+            margin-top: 0%;
+        }
+
+
+  }
