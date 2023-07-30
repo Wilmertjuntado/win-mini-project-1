@@ -11,9 +11,10 @@ a {
 }
 
 body {
-    background: rgba(238, 94, 94, 0.1);
-    height: 100%;
+    background: rgba(207, 188, 188, 0.1);
+    display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 /********** Header Section *************/
@@ -48,6 +49,7 @@ body {
     font-size: 35px;
     font-weight: bold;
     color: black;
+    text-decoration: none;
 }
 
 .logo-design .logo-anchor:hover {
@@ -64,7 +66,8 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
-    list-style: none;    
+    list-style: none; 
+    text-decoration: none;   
 }
 
 .nav-design ul li a {
@@ -72,6 +75,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     line-height: 60px;
+    text-decoration: none; 
     
 }
 
@@ -202,7 +206,7 @@ body {
     width: 75%;
 }
 
-/************** Garage Section ************/
+/************** Tool-Box Section ************/
 
 .garage-container {
     width: 100%;
@@ -213,7 +217,7 @@ body {
 
 
 .container-section {
-    background: rgba(238, 192, 192, 0.1);
+    /* background: rgba(238, 192, 192, 0.1); */
 
     display: flex;
     flex-direction: column;
@@ -225,7 +229,7 @@ body {
    height: 100%;
    
 
-   box-shadow: 0px 15px 10px -15px #838080;    /* bottom-shadow */
+   box-shadow: 0px 15px 10px -15px #9e9999;    /* bottom-shadow */
    
 }
 
@@ -342,14 +346,17 @@ body {
     height: 80px;
 }
 
-/***************** Work Flow **********************/
+
+/***************** My Work Flow **********************/
 
 .work-flow-container {
     width: 100%;
     height: 100vh;
-    margin-top: 5rem;
-    margin-bottom: 20em;
+    margin-top: 5em;
+    margin-bottom: 10em;
     text-align: center;
+
+    
 }
 
 .work-flow-container .flow-h2 {   
@@ -359,19 +366,25 @@ body {
    
 }
 
+
+
 .work-flow {
     width: 80%;
-    height: 120%;
+    height: auto;
     background-color: aliceblue;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
+ 
    
     display: flex;    
     flex-wrap: wrap;  
     align-items: center;  
     justify-content: space-evenly;
+    box-shadow: 0px 15px 10px -15px #838080;
 }
+
+
 
 [class ^= "num"] {
     width: 40%;
@@ -380,9 +393,12 @@ body {
     
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    
+        
 }
+
+
 
 .flow-design {
     font-size: large;
@@ -397,29 +413,111 @@ body {
 .p-flow {
     text-align: left;
     padding-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-/************************** My Work **********************/
 
-.my-work-conatiner {
+/************************** My Garage **********************/
+
+.my-work-container {
     width: 100%;
-    height: 100vh;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    height: 75vh;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: center;
-
 }
 
-.my-work-conatiner .my-work {
+.my-work-container .my-work {
     font-size: 35px;
-    padding-top: 20px;
+    padding-top: 150px;
     padding-bottom: 50px;
-    text-align: center;
+    
+}
 
+.work-section {
+    width: 80%;
+    height: auto;
+    background-color: aliceblue;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+   
+    display: flex;    
+    flex-wrap: wrap;  
+    align-items: center;  
+    justify-content: space-evenly;
+    box-shadow: 0px 15px 10px -15px #838080;
 }
 
 .work-garage {
-    width: 80%;
-    height: 100%;
-    background-color: beige;
+    /* background-color: aqua; */
+    width: 20em;
+    height: 20em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-garage img a {
+    background-color: blue;
+}
+
+.work-garage img {
+    width: 16rem;
+    height: 16rem;
+    padding-bottom: 2rem;
+}
+
+.work-garage .work-h3 {
+    font-size: large;
+}
+
+
+
+/****************** Contact Form *******************/
+
+.contact-container {
+    height: 50vh;
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 1rem;  
+    margin-bottom: 5em;
+    padding-top: 2rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.social-media > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+.container h3 {
+    font-size: large;
+}
+
+/*************** Footer Section ***************/
+
+.footer-div {
+    background-color: rgb(39, 38, 38);
+    width: 100%;
+    height: 10em;
+    color: aliceblue;
+    text-align: center;
+    
+    margin: 10em 0 0 0;
+}
+
+.footer-div h3 {
+    font-size: small;
+       justify-self: center;
+
 }

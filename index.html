@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="images/figma-5.svg">
+    <link rel="stylesheet" href="portfolio.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>Mini-Project-1: Portfolio</title>
 </head>
 <body>
 
-    <!----------------------- Header Section---------------- -->
+     <!----------------------- Header Section---------------- -->
     <header class="header-design">
 
         <nav class="nav-design">
@@ -19,8 +22,8 @@
             </div>
             <ul class="nav-item">
                 <li><a href="index.html">About</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -32,7 +35,8 @@
                     <p>Welcome to my portfolio! I'm Wilmer, a passionate Web Developer and Data Analyst. With a flair for creativity and a penchant for data-driven insights, I craft user-centric web experiences while unraveling the power of information. Join me on this journey as I weave digital wonders and transform complex data into actionable strategies. Let's make an impact together!</p>
                 
                     <div class="hero-button">
-                        <button>My Work</button>
+                        <button onclick = "window.location.href='portfolio.html';">My Work</button>
+
                         <button>Contact Me</button>
                     </div>
                 </div>
@@ -44,7 +48,7 @@
         </div>
    </header>
 
-   <!-- --------------About me Section------------- -->
+        <!-- --------------About me Section------------- -->
 
    
 
@@ -105,9 +109,11 @@
                     <img class="item" src="https://raw.githubusercontent.com/Wilmertjuntado/mini-project-1/1f38cbad432b19bf6339583cd11a5a751b46f294/images/python-5.svg" alt="Python logo by WorldVectorLogo" class="img-design">
                 </div>
             </section>
-        </div>  
+        </div>
+       
     </div>
-<!--------------------- Work Flow ------------------------>
+
+        <!--------------------- Work Flow ------------------------>
     <div class="work-flow-container">
         <h2 class="flow-h2">My Work-Flow</h2>
 
@@ -136,40 +142,82 @@
             </section>
         
         </div>
-
+        
     </div>
+   
 
-    <!-------------------- My Garage --------------------->
+        <!-------------------- My Garage --------------------->
 
     <div class="my-work-container">
-        <h2 class="my-work">My Work</h2>
+        <h2 class="my-work">My Garage</h2>
         <div class="work-section">
             <section class="work-garage">
-                <h3 class="work-h3">My Fortfolio</h3> 
-                <a href="https://wilmertjuntado.github.io/pf-exercise/" class="link-to-site"><img class="" src="https://wilmertjuntado.github.io/pf-exercise/" alt="First Website deployed with Git-Hub" class="sample-work"></a>     
+                <a href="https://wilmertjuntado.github.io/pf-exercise/" class="link-to-site"><img class="work-image" src="https://raw.githubusercontent.com/Wilmertjuntado/mini-project-1/feature-branch/images/Portfolio.pic.png" alt="First Website deployed with Git-Hub" class="sample-work"></a>  
+                <h3 class="work-h3">My Fortfolio</h3>   
             </section>
             <section class="work-garage">
-                <h3 class="work-h3">My Fortfolio</h3> 
-                <img src="" alt="" class="sample-work">         
+                <a href="https://wilmertjuntado.github.io/dog-gallery/">
+                <img class="work-image" src="https://raw.githubusercontent.com/Wilmertjuntado/mini-project-1/feature-branch/images/Dog%20Photo%20Gallery.png" alt="Dog Gallery Site" class="sample-work"> </a>   
+                <h3 class="work-h3">Dog Gallery</h3>      
             </section>
             <section class="work-garage">
-                <h3 class="work-h3">My Fortfolio</h3> 
-                <img src="" alt="" class="sample-work">         
+                <a href="https://wilmertjuntado.github.io/Semantic-Elements/">
+                <img class="work-image" src="https://raw.githubusercontent.com/Wilmertjuntado/mini-project-1/feature-branch/images/css-exercises.png" alt="Dog Gallery Site" class="sample-work">  </a>  
+                <h3 class="work-h3">CSS Exercises</h3>      
             </section>
             <section class="work-garage">
-                <h3 class="work-h3">My Fortfolio</h3> 
-                <img src="" alt="" class="sample-work">         
+                <a href="https://wilmertjuntado.github.io/grid-exercises/">
+                <img class="work-image" src="https://raw.githubusercontent.com/Wilmertjuntado/mini-project-1/feature-branch/images/Simpson's%20Character.png" alt="Dog Gallery Site" class="sample-work"> </a> 
+                <h3 class="work-h3">The Simpson's Gallery</h3>      
             </section>
-            <section class="work-garage">
-                <h3 class="work-h3">My Fortfolio</h3> 
-                <img src="" alt="" class="sample-work">         
-            </section>
-            <section class="work-garage">
-                <h3 class="work-h3">My Fortfolio</h3> 
-                <img src="" alt="" class="sample-work">         
-            </section>
+            
         </div>
     </div>
+
+        <!------------------------ Contact Form  ------------------>
+
+    <div class="contact-container">
+        <div class="social-media">
+            <img src="https://raw.githubusercontent.com/Wilmertjuntado/mini-project-1/feature-branch/images/new%20pic.jpg" alt="Profile Pic" class="contact-img">
+            <div class="social-md">
+                <img src="" alt="" class="fb">
+                <img src="" alt="" class="linked-in">
+                <img src="" alt="" class="email">
+            </div>
+            <h3 class="contact-h3">Let's discuss about your project</h3>
+            <p class="contact-p">(You will hear back from me within 24 hours)</p>
+        </div>
+        <div class="container mt-3">
+            <h3>Help me get to know you</h3><br>
+                <form class="row g-3" action="/submit_form.php" method="POST">
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="firstname">First Name:</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="lastname">Last Name:</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            
+        </div>
+    </div>
+
+    <footer class="footer-div">
+        <h3 class="footer-h2">Privacy Policy</h3>
+        <h3 class="footer-h2">Copyright: Series of 2023</h3>
+    </footer>
     
 </body>
 </html>
