@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
     
 }
+.bg {
+    background-color: #e62a2a;
+}
 
 a {
     cursor: pointer;
@@ -13,23 +16,43 @@ a {
 
 body {
     background: rgba(207, 188, 188, 0.1);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    
 }
 
 /********** Header Section *************/
 
-.header-design {
+/* nav {
+    background: #c6ec8d;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display
+} */
+/* .header-design {
     
     width: 90%;
     height: 10vh;
     margin: auto auto;
-}
+} */
 
 /****************** Nav Section ******************/
 
-.nav-design {
+/* .nav-design {
     width: 100%;
     height: 100px;
     background: rgba(164, 238, 94, 0.1);
@@ -84,7 +107,7 @@ body {
 .nav-design ul li a:hover {
     color: blue;
     
-}
+} */
 
 /************************ Main Container *******************************/
 
@@ -1330,3 +1353,6 @@ body {
 
 
   }
+
+
+  
