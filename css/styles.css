@@ -19,7 +19,6 @@ body {
     
 }
 
-/********** Header Section *************/
 
 /************************ Main Container *******************************/
 
@@ -427,11 +426,7 @@ body {
 
         }
 
-        /* Style for the about-me-content container */
-        /* .about-me-content {
-            display: flex;
-            
-        } */
+        
 
         /* Style for the h1 within the left section */
         .about-me-content h1 {
@@ -703,7 +698,6 @@ body {
         }
 
         .work-garage {
-            /* background-color: aqua; */
             width: 80%;
             height: 300px;
 
