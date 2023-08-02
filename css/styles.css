@@ -725,11 +725,12 @@ body {
              /****************** Contact Form *******************/
 
         .contact-container {
-            height: 85vh;
-            width: auto;
+            
+            width: 100%;
+            height: auto;
             background-color: aliceblue;
             margin-top: 30em;  
-            margin-bottom: -8rem;
+            margin-bottom: 3rem;
             padding-top: 2rem;
             text-align: center;
 
@@ -759,7 +760,7 @@ body {
             text-align: center;
             justify-content: center;
             margin: auto auto;
-            margin-top: 0%;
+            margin-top: 10%;
         }
 
   }
