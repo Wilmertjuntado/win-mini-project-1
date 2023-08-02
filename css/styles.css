@@ -283,7 +283,7 @@ body {
 }
 
 .about-me-info img {
-    width: 80px;
+    width: 100px;
     height: 80px;
 }
 
@@ -564,7 +564,7 @@ body {
             display: grid;
             gap: 10px;
             grid-template-columns: auto auto;
-            grid-template-rows: repeat(10, 150px);
+            grid-template-rows: repeat(7, 150px);
         
         }
 
