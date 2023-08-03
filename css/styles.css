@@ -28,6 +28,14 @@ body {
     margin: auto;
 }
 
+.ant-house-design {
+    width: 5rem;
+    height: 5rem;
+}
+
+span {
+    font-size: larger;
+}
 
 /* ****************** Hero Section ******************/ 
 
