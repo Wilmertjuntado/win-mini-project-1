@@ -34,6 +34,7 @@ body {
 }
 
 span {
+    padding-left: 1rem;
     font-size: larger;
 }
 
@@ -410,6 +411,13 @@ span {
 
 
 /********************************************************** Media Queries ***********************************************/
+
+
+
+
+
+
+
 
 @media screen and (max-width: 575.98px) {
         
